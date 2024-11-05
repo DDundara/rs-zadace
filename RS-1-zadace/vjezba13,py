@@ -1,0 +1,25 @@
+#1.dio 
+def prvi_i_zadnji(lista):
+    return (lista[0], lista[-1])
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(prvi_i_zadnji(lista))
+#2.dio
+def maks_i_min(lista):
+    maksimum = lista[0]
+    minimum = lista[0]
+    for broj in lista[1:]:
+        if broj > maksimum:
+            maksimum = broj
+        if broj < minimum:
+            minimum = broj
+    return (maksimum, minimum)
+lista = [5, 10, 3, 50, 100, 4, 150, 50, 80]
+print(maks_i_min(lista)) 
+#3.dio
+def presjek(skup_1, skup_2):
+    return {element for element in skup_1 if element in skup_2}
+skup_1 = {1, 2, 3, 4, 5}
+skup_2 = {6, 2, 8, 4, 10}
+print(presjek(skup_1, skup_2))
+
+
